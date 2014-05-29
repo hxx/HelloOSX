@@ -2,6 +2,10 @@ class AppDelegate
   def applicationDidFinishLaunching(notification)
     buildMenu
     buildWindow
+
+    alert = NSAlert.new
+    alert.messageText = "Hello Ruby Motion!"
+    alert.runModal
   end
 
   def buildWindow
